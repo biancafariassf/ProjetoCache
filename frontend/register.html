@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Pessoas</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/stylesregister.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h2 class="mt-5">Cadastro</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite aqui o seu nome" required>
+      </div>
+      <div class="form-group">
+        <label for="idade">Idade</label>
+        <input type="number" class="form-control" id="idade" placeholder="Digite aqui a sua idade" required>
+      </div>
+      <div class="form-group">
+        <label for="sexo">Sexo</label>
+        <select class="form-control" id="sexo" required>
+          <option>Masculino</option>
+          <option>Feminino</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="cep">CEP</label>
+        <input type="text" class="form-control" id="cep" placeholder="Digite aqui o seu CEP" required>
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" class="form-control" id="senha" placeholder="Digite aqui a sua senha" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+    <p class="mt-3">Já tem uma conta? <a href="login.html">Faça login aqui</a></p>
+    <hr> <!-- Linha horizontal para criar o efeito de sublinhado -->
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
